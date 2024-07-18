@@ -1,0 +1,15 @@
+footer {
+  padding: 1rem;
+  background-color: #1c7fcf;
+}
+
+.f {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.f__copyright {
+  color: #eeeeee;
+  text-align: center;
+}

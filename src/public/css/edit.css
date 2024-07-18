@@ -1,0 +1,85 @@
+.edit__heading {
+  border-bottom: solid 1px lightgray;
+}
+
+.edit-form {
+  margin-top: 2rem;
+}
+
+.edit-block {
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+
+.edit-block__heading {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-light-color);
+}
+
+.edit-block-body {
+  padding: 1.5rem 1rem;
+}
+
+.edit-block__input {
+  width: calc(100% - 2rem);
+  padding: 0.5rem;
+  border: solid 1px lightgray;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.edit-block__input.error {
+  border-color: var(--error-color);
+  background-color: var(--error-light-color);
+}
+
+.edit-block-helper {
+  padding-left: 1.5rem;
+}
+
+.edit-block-helper__item {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+
+.edit-block__error {
+  color: #b40000;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.edit-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.edit__submit, .edit__cancel {
+  width: 100%;
+  color: #eeeeee;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  transition: filter .2s;
+  cursor: pointer;
+}
+
+.edit__submit {
+  background-color: var(--primary-color);
+}
+
+.edit__cancel {
+  background-color: grey;
+}
+
+.edit__submit:hover, .edit__cancel:hover {
+  filter: brightness(0.8);
+}
