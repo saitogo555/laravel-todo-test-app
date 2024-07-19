@@ -19,4 +19,4 @@ RUN a2ensite 000-default.conf
 WORKDIR /var/www/html
 
 # Apacheユーザーに変更(イメージ内に存在する作成済みの権限が制限されたユーザー)
-RUN chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www
