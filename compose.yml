@@ -6,7 +6,6 @@ services:
       context: .
       dockerfile: ./php/dockerfile
     volumes:
-      - ./php/apache-conf:/etc/apache2/sites-available
       - ./src:/var/www/laravel-todo-app
     ports:
       - "8000:8000"
