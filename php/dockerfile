@@ -21,5 +21,8 @@ RUN a2enmod rewrite
 # 作業ディレクトリの設定
 WORKDIR /var/www/laravel-todo-app
 
+# www-dataユーザーのUIDとGIDを1000に変更
+RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
+
 # Apacheユーザーに変更(イメージ内に存在する作成済みの権限が制限されたユーザー)
 RUN chown -R www-data:www-data /var/www/laravel-todo-app
