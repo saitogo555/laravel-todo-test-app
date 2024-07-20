@@ -1,8 +1,12 @@
 FROM php:8.3.9-apache
 
-#
+# シェルの設定
+ENV SHELL /bin/bash
+
+# パッケージリストの更新とパッケージのアップグレード
 RUN apt-get update && apt-get upgrade -y
 
+# パッケージのインストール
 RUN apt-get install unzip
 
 # PHPの拡張機能をインストール
