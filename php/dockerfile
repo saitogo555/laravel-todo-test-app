@@ -22,4 +22,4 @@ RUN a2enmod rewrite
 WORKDIR /var/www/laravel-todo-app
 
 # Apacheユーザーに変更(イメージ内に存在する作成済みの権限が制限されたユーザー)
-RUN chown -R www-data:www-data /var/www
+RUN chown -R www-data:www-data /var/www/laravel-todo-app
