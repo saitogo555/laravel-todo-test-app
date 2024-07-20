@@ -15,8 +15,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel_todo_app
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
     volumes:
       - ./mariadb_data:/var/lib/mysql
   phpmyadmin:
