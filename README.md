@@ -22,8 +22,7 @@
 8. `php artisan key:generate`を実行してAPI_KEYを生成する。
 9. `php artisan migrate`を実行してデータベースをセットアップする。
 10. `php artisan db:seed`を実行してダミーデータを追加する。
-11. `php artisan serve`を実行して開発サーバーを起動する。
-12. ブラウザのアドレスバーに`http://localhost:8000`を入力してサイトにアクセスする。
+11. ブラウザのアドレスバーに`http://localhost:8080`を入力してサイトにアクセスする。
 
 ## phpMyAdmin
 
