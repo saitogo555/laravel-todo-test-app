@@ -9,7 +9,7 @@ services:
       - ./php/apache-conf:/etc/apache2/sites-available
       - ./src:/var/www/laravel-todo-app
     ports:
-      - "8080:80"
+      - "8000:8000"
     depends_on:
       - db
   db:
