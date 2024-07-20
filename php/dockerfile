@@ -17,10 +17,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Apacheの設定
 RUN a2enmod rewrite
-RUN a2ensite 000-default.conf
 
 # 作業ディレクトリの設定
-WORKDIR /var/www/html
+WORKDIR /var/www/laravel-todo-app
 
 # Apacheユーザーに変更(イメージ内に存在する作成済みの権限が制限されたユーザー)
 RUN chown -R www-data:www-data /var/www
